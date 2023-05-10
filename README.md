@@ -35,3 +35,5 @@ EOF help quit
 All the tests should be executed at the root of the project by using the following command:
 
 `python3 -m unittest discover tests`
+
+*******************************************************************************************************
