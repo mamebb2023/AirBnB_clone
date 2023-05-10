@@ -22,6 +22,6 @@ EOF help quit
 
 ## Usage
 | Command | Usage | Description
-|--|--|--|--|
+|--|--|--|
 | help | `help` or `help <topic>` | Lists the availale commands or the description of a specific command |
 | quit | `quit` | To quit the prompt |
