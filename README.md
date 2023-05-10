@@ -18,10 +18,14 @@ To use the cmd interpreter, type:<br>
 ```
 $
 $ ./console.py
->>> (hbnb)
->>> (hbnb) help
-EOF help quit
->>> quit
+(hbnb)
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) quit
 $
 ```
 
