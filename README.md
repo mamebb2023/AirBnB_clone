@@ -5,17 +5,17 @@
 This project is to make a clone of the AirBnB website, with a database, back-end and html interface
 
 ## Command Interpreter
-To start the cmd interpreter, type:
-      ./console.py
-To use the cmd interpreter, type:
-      (hbnb) help
-        to list the available commands to use
+To start the cmd interpreter, type: \n
+      ./console.py\n
+To use the cmd interpreter, type:\n
+      (hbnb) help\n
+        to list the available commands to use\n
 # Example
->>> ./console.py
->>> (hbnb)
->>> (hbnb) help
-EOF help quit
->>> quit
+>>> ./console.py\n
+>>> (hbnb)\n
+>>> (hbnb) help\n
+EOF help quit\n
+>>> quit\n
 
 
 
