@@ -11,12 +11,12 @@ To use the cmd interpreter, type:
 `(hbnb) help`
       to list the available commands to use
 # Example
-'''
+```
 $ ./console.py
 >>> (hbnb)
 >>> (hbnb) help
 EOF help quit
 >>> quit'
-'''
+```
 
 
