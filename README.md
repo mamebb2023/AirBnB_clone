@@ -16,11 +16,13 @@ To use the cmd interpreter, type:<br>
 ### Example
 
 ```
+$
 $ ./console.py
 >>> (hbnb)
 >>> (hbnb) help
 EOF help quit
->>> quit'
+>>> quit
+$
 ```
 
 ## Usage
