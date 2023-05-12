@@ -7,7 +7,7 @@ Unittest classes:
     TestBaseModel_to_dict
 """
 import os
-import models
+from models import storage
 import unittest
 from datetime import datetime
 from time import sleep
@@ -21,8 +21,8 @@ class TestBaseModel_instantiation(unittest.TestCase):
         self.assertEqual(BaseModel, type(BaseModel()))
 
     # No storage associate yet.
-    # def test_new_instance_stored_in_objects(self):
-    #     self.assertIn(BaseModel(), models.storage.all().values())
+    def test_new_instance_stored_in_objects(self):
+        self.assertIn(BaseModel(), storage.all().values())
 
     def test_id_is_public_str(self):
         self.assertEqual(str, type(BaseModel().id))

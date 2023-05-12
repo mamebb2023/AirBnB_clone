@@ -2,7 +2,7 @@
 """ Defines the BaseModel class """
 
 
-# import models
+from models import storage
 from uuid import uuid4
 from datetime import datetime
 
@@ -21,19 +21,22 @@ class BaseModel:
         self.id = str(uuid4())
         self.created_at = datetime.today()
         self.updated_at = datetime.today()
-        if len(kwargs) != 0:
-            for k, v in kwargs.items():
-                if k == "created_at" or k == "updated_at":
-                    self.__dict__[k] = datetime.strptime(v, tform)
+        # If instance not created from a dictionary,
+        #   initialize new storage
+        if len(kwargs) != 0:  # check the length of keys
+            for key, value in kwargs.items():
+                # update data type of date values
+                if key in ["created_at", "updated_at"]:
+                    self.__dict__[key] = datetime.strptime(value, tform)
                 else:
-                    self.__dict__[k] = v
+                    self.__dict__[key] = value
         else:
-            pass  # models.storage.new(self)
+            models.storage.new(self)  # create new storage
 
     def save(self):
         """ Update updated_at with the current datetime """
         self.updated_at = datetime.today()
-        # models.storage.save()
+        storage.save()
 
     def to_dict(self):
         """ Return the dictionary of the BaseModel instance
