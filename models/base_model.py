@@ -13,7 +13,7 @@ class BaseModel:
 
         Args:
             *args (any): not used
-            **kwargs (dict): Key/value pairs of attributes.
+            **kwargs (dict): Key/value pairs of attributes
         """
         tform = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid4())
