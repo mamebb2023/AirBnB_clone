@@ -22,7 +22,7 @@ class FileStorage(object):
     # ======= Instance Methods ===============
     def all(self):
         return type(self).__objects
-    
+
     def new(self, obj):
         key = "{}.{}".format(obj.__class__, obj.id)
         type(self).__objects[]
@@ -42,4 +42,3 @@ class FileStorage(object):
                 type(self).__objects = json.load(data, fp)
         except FileNotFoundError:
             pass
-
