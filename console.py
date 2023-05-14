@@ -14,7 +14,6 @@ from models.amenity import Amenity
 from models.review import Review
 
 
-
 class HBNBCommand(cmd.Cmd):
     """ The command prompt """
     prompt = "(hbnb) "
